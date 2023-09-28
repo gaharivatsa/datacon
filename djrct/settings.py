@@ -54,7 +54,7 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    '*'
+    
 ]
 
 ROOT_URLCONF = "djrct.urls"
@@ -82,9 +82,14 @@ WSGI_APPLICATION = "djrct.wsgi.application"
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+    'default': {
+        #'ENGINE': 'django.db.backends.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'railway',
+        'USER': 'postgres',
+        'PASSWORD': '7THNUFAGssTAgDjxkRUu',
+        'HOST': 'containers-us-west-102.railway.app',
+        'PORT': '5725',
     }
 }
 
