@@ -54,7 +54,7 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    
+    'https://datacon-react.vercel.app',
 ]
 
 ROOT_URLCONF = "djrct.urls"
